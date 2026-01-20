@@ -5,6 +5,14 @@ CREATE TABLE IF NOT EXISTS movies(
     created_at DATATIME DEFAULT CURRENT_TIMESTAMP
 );
 
+INSERT INTO movies (title, genres)
+VALUES
+("test", "test"),
+("The matrix", "SciFi, Action"),
+("Toy Story", "Adventure"),
+("Shrek", "Adventure, Action")
+;
+
 UPDATE movies
 SET title = "peliculas", genres = "generos"
 WHERE id=1
